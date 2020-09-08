@@ -1,27 +1,48 @@
 # NgxUtility
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Angular utility modules
 
-## Development server
+## Modules
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [@ngx-utility/core](projects/core)
+- [@ngx-utility/files](projects/files)
+- [@ngx-utility/dates](projects/dates)
 
-## Code scaffolding
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Docs preview
 
-## Build
+```shell script
+npm run start
+``` 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Build modules
 
-## Running unit tests
+```shell script
+npm run build:lib
+``` 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Release new version
 
-## Running end-to-end tests
+Release new patch version
+```shell script
+npm run release
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Release new major version
+```shell script
+npm run release:major
+```
 
-## Further help
+### Publish released version
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. checkout tag or master
+2. build library `npm run build:lib`
+3. publish each module
+    1. `npm run publish:core`
+    2. `npm run publish:files`
+    3. `npm run publish:dates`
+
+## License
+
+This project is released under the MIT license, which can be found in [`LICENSE`](LICENSE).
