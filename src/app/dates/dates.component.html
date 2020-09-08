@@ -1,0 +1,24 @@
+<mat-tab-group>
+  <mat-tab label="FromNow Pipe">
+    <h4>Usage</h4>
+    <pre><code [highlight]="'yesterday|fromNow'"></code></pre>
+    <h4>Examples</h4>
+    <mat-list>
+      <mat-list-item>{{now|fromNow}}</mat-list-item>
+      <mat-list-item>{{yesterday|fromNow}}</mat-list-item>
+      <mat-list-item>{{previousMonth|fromNow}}</mat-list-item>
+      <mat-list-item>{{previousYear|fromNow}}</mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="FromDate">
+    <h4>Usage</h4>
+    <pre><code [highlight]="'now|fromDate:yesterday'"></code></pre>
+    <h4>Examples</h4>
+    <mat-list>
+      <mat-list-item>{{now|fromDate:yesterday}}</mat-list-item>
+      <mat-list-item>{{yesterday|fromDate:yesterday}}</mat-list-item>
+      <mat-list-item>{{previousMonth|fromDate:yesterday}}</mat-list-item>
+      <mat-list-item>{{previousYear|fromDate:yesterday}}</mat-list-item>
+    </mat-list>
+  </mat-tab>
+</mat-tab-group>

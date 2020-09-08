@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="nav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="app-name">{{(pageInfo$|async)?.title}}</h1>
+    <span>{{version}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #nav mode="side">
+    <mat-nav-list>
+      <mat-list-item routerLink="home" routerLinkActive="active" style="border-left-color:#f5f5f5;">
+        <mat-icon matListIcon>home</mat-icon>
+        <h1 matLine>Home</h1>
+      </mat-list-item>
+      <mat-list-item routerLink="core" routerLinkActive="active" style="border-left-color:#00e1ff;">
+        <mat-icon matListIcon>build</mat-icon>
+        <h1 matLine>Core</h1>
+      </mat-list-item>
+      <mat-list-item routerLink="files" routerLinkActive="active" style="border-left-color:#feff00;">
+        <mat-icon matListIcon>insert_drive_file</mat-icon>
+        <h1 matLine>Files</h1>
+      </mat-list-item>
+      <mat-list-item routerLink="dates" routerLinkActive="active" style="border-left-color:#00ff69;">
+        <mat-icon matListIcon>update</mat-icon>
+        <h1 matLine>Dates</h1>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <mat-icon>{{(pageInfo$|async)?.pageIcon}}</mat-icon>
+        <h1 style="margin-left:8px;">{{(pageInfo$|async)?.pageTitle}}</h1>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

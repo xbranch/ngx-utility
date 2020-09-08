@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+
+  h1.app-name {
+    flex: 1;
+    margin-left: 8px;
+  }
+
+  mat-sidenav-container {
+    flex: 1 1 100%;
+  }
+
+  .page-container {
+    padding: 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  mat-list-item {
+    border-left: 3px solid;
+
+    &:not(.active) {
+      border-left-color: transparent !important;
+    }
+  }
+}

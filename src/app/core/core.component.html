@@ -1,0 +1,21 @@
+<mat-tab-group>
+  <mat-tab label="Empty Pipe">
+    <h4>Usage</h4>
+    <pre><code [highlight]="'null|empty'"></code></pre>
+    <h4>Examples</h4>
+    <mat-list>
+      <mat-list-item>{{null|empty}}</mat-list-item>
+      <mat-list-item>{{undefined|empty}}</mat-list-item>
+      <mat-list-item>{{''|empty}}</mat-list-item>
+      <mat-list-item>{{0|empty}}</mat-list-item>
+      <mat-list-item>{{'I have real value'|empty}}</mat-list-item>
+      <mat-list-item>{{1|empty}}</mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="SafeHtml Pipe">
+    <h4>Usage</h4>
+    <pre><code [highlight]="'[innerHTML]=\'html|safeHtml\''"></code></pre>
+    <h4>Examples</h4>
+    <div [innerHTML]="html|safeHtml"></div>
+  </mat-tab>
+</mat-tab-group>
