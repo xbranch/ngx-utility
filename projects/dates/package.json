@@ -1,6 +1,19 @@
 {
   "name": "@ngx-utility/dates",
-  "version": "1.0.1",
+  "version": "11.0.0",
+  "license": "MIT",
+  "author": "User <developer@xbranch.io>",
+  "description": "Angular Utility Dates Module",
+  "keywords": [
+    "angular",
+    "utlitiy",
+    "dates",
+    "moment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbranch/ngx-utility.git"
+  },
   "dependencies": {
     "tslib": "^2.0.0"
   },
