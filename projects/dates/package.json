@@ -1,6 +1,6 @@
 {
   "name": "@ngx-utility/dates",
-  "version": "10.0.2-snapshot.0",
+  "version": "11.0.0",
   "license": "MIT",
   "author": "User <developer@xbranch.io>",
   "description": "Angular Utility Dates Module",
