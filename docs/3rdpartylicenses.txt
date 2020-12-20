@@ -92,10 +92,13 @@ MIT
 MIT
 
 @ngx-utility/core
+MIT
 
 @ngx-utility/dates
+MIT
 
 @ngx-utility/files
+MIT
 
 core-js
 MIT
