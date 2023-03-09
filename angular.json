@@ -31,6 +31,9 @@
               "src/styles.scss"
             ],
             "scripts": [],
+            "allowedCommonJsDependencies": [
+              "moment"
+            ],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
